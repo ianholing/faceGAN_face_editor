@@ -1,4 +1,4 @@
-# Pix2Pix model created for the # RetoDotCSV2080Super
+# Pix2Pix model created for the #RetoDotCSV2080Super
 
 The objective of this research has been to create a face editor based on their segmentation. The idea is simple, given a photo of a face with its initial segmentation, adding, removing or modifying elements of that segmentation so that the model ends up drawing a face according to the new segmentation, trying not to lose the tone or/and the features of the face, in order to be able to add, remove or modify only those elements in the initial photo using the mask of the new segmentation and thus give a much more realistic output to the model.
 
@@ -48,6 +48,7 @@ final_img.save("final.jpg")
 ## Future problems
 
 The most complex point of the model is to maintain the tone and characteristics of the original photo, since I do not have dataset with two different photos of the same person and I am therefore forced to use the same photo of features in the model that the one that I really want to get with the GAN generator. A model to which you introduce the output through the input tend to avoid the rest of the data and try in some way to pass that image to the output having 100% success. 
+
 For this I have done several tests, the most promising by introducing the photo as input and generating an embedding to apply to the original embedding of the segmentation through a technique called GRAM Matrix, with which you can pass the characteristics of a matrix avoiding pass the spatial data, but still the model learns that the colors, for example of the shirt, should be in the area of the shirt even if it does not concrete too much.
 
 ###### Problem example 
@@ -110,6 +111,7 @@ final_img.save("final.jpg")
 ## Problemas futuros
 
 El punto más complejo del modelo es sido mantener el tono y las características de la foto original, ya que no dispongo de dataset con dos fotos diferentes de la misma persona y me veo obligado por tanto a usar la misma foto de features en el modelo que la que quiero sacar realmente con el generador de la GAN. Un modelo al que le introduces la salida por la entrada lo normal es que evite el resto de datos e intente de alguna manera de intentar pasar esa imagen hacía el output teniendo un 100% de acierto.
+
 Para ello he hecho varias pruebas, la más prometedora introduciendo la foto como entrada y generando un embedding que aplicar al embedding original de la segmentación a  través de una técnica que se llama GRAM Matrix, con la que se consigue pasar las características de una matriz evitando pasar los datos espaciales, pero aún así el modelo aprende que los colores por ejemplo de la camiseta, deben estar en la zona de la camiseta aunque no concrete demasiado.
 
 ###### Ejemplo del problema

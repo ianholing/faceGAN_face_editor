@@ -3,7 +3,7 @@
 The objective of this research has been to create a face editor based on their segmentation. The idea is simple, given a photo of a face with its initial segmentation, adding, removing or modifying elements of that segmentation so that the model ends up drawing a face according to the new segmentation, trying not to lose the tone or/and the features of the face, in order to be able to add, remove or modify only those elements in the initial photo using the mask of the new segmentation and thus give a much more realistic output to the model.
 
 ###### Example
-HERE PHOTO
+![Final example](img/final_result.png)
 
 ## The process to use the model
 
@@ -51,7 +51,7 @@ The most complex point of the model is to maintain the tone and characteristics 
 For this I have done several tests, the most promising by introducing the photo as input and generating an embedding to apply to the original embedding of the segmentation through a technique called GRAM Matrix, with which you can pass the characteristics of a matrix avoiding pass the spatial data, but still the model learns that the colors, for example of the shirt, should be in the area of the shirt even if it does not concrete too much.
 
 ###### Problem example 
-HERE PHOTO
+![GRAM Prbolem](img/gram_problem.png)
 
 ## Conclusion
 
@@ -64,7 +64,7 @@ ___
 El objetivo de esta investigación ha sido crear un editor de caras en base a la segmentación de las mismas. La idea es simple, dada una foto de una cara con su segmentación inicial, añadir, quitar o modificar elementos de esa segmentación de tal forma que se acabe dibujando una cara acorde a la nueva segmentación, intentando en todo momento no perder el tono, la personalidad de la cara para después poder añadir, quitar o modificar únicamente esos elementos en la foto inicial utilizando la mascara de la nueva segmentación y dar así una salida mucho más realista al modelo.
 
 ###### Ejemplo
-FOTO HERE
+![Final example](img/final_result.png)
 
 ## El proceso para utilizar el modelo
 
@@ -113,7 +113,7 @@ El punto más complejo del modelo es sido mantener el tono y las característica
 Para ello he hecho varias pruebas, la más prometedora introduciendo la foto como entrada y generando un embedding que aplicar al embedding original de la segmentación a  través de una técnica que se llama GRAM Matrix, con la que se consigue pasar las características de una matriz evitando pasar los datos espaciales, pero aún así el modelo aprende que los colores por ejemplo de la camiseta, deben estar en la zona de la camiseta aunque no concrete demasiado.
 
 ###### Ejemplo del problema
-FOTO HERE
+![GRAM Prbolem](img/gram_problem.png)
 
 ## Conclusión
 Al final he tirado hacia atrás y he dejado el modelo tal y como lo tenía desde el principio que aunque no es muy exacto es visualmente más atractivo que con la GRAM.

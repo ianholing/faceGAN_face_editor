@@ -57,7 +57,7 @@ HERE PHOTO
 
 At the end I have pulled back and left the model as I had it from the beginning that although it is not very accurate, also it is visually more attractive than with the GRAM. I have not had time to finish everything I wanted to do so I will continue the project when the challenge ends.
 
-======
+___
 
 # Modelo Pix2Pix creado para el #RetoDotCSV2080Super
 

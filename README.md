@@ -2,6 +2,8 @@
 
 The objective of this research has been to create a face editor based on their segmentation. The idea is simple, given a photo of a face with its initial segmentation, adding, removing or modifying elements of that segmentation so that the model ends up drawing a face according to the new segmentation, trying not to lose the tone or/and the features of the face, in order to be able to add, remove or modify only those elements in the initial photo using the mask of the new segmentation and thus give a much more realistic output to the model.
 
+In order to match the initial features picture we use a MSE loss and a GRAM matrix to extract features along the usual discriminator of pix2pix GAN.
+
 ###### Example
 ![Final example](img/final_result.png)
 
@@ -63,6 +65,8 @@ ___
 # Modelo Pix2Pix creado para el #RetoDotCSV2080Super
 
 El objetivo de esta investigación ha sido crear un editor de caras en base a la segmentación de las mismas. La idea es simple, dada una foto de una cara con su segmentación inicial, añadir, quitar o modificar elementos de esa segmentación de tal forma que se acabe dibujando una cara acorde a la nueva segmentación, intentando en todo momento no perder el tono, la personalidad de la cara para después poder añadir, quitar o modificar únicamente esos elementos en la foto inicial utilizando la mascara de la nueva segmentación y dar así una salida mucho más realista al modelo.
+
+Con el objetivo de obtener una cara lo más parecido posible a la entrada, se ha añadido una función de perdida MSE y una matriz GRAM de la que extraemos las features de la imagen trabajando en paralelo con el discriminador típico de las GAN pix2pix.
 
 ###### Ejemplo
 ![Final example](img/final_result.png)
